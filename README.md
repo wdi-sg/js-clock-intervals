@@ -2,14 +2,33 @@
 
 Create a webpage that displays a clock.
 
+You can write some HTML, or you can start with a blank page.
+
 Your display should have an hour, minute and seconds display:
 
 ```
 12:23:23
 ```
+## Further
+Create a clock that displays a more accurate time:
+```
+12:23:43:129
+```
 
 ## Further
-Create a clock that displays AM and PM.
+Create a clock that displays AM and PM. (12 vs 24)
+
+## Further: Show Actual Time
+(You can try this or move on to the next step if you want)
+Use JavaScripts `Date` objects to display the actual
+time.
+
+```
+var now = new Date();
+```
+
+Get `now` by declaring a new Date object. Investigate
+what useful functions the Date object has attached to it.
 
 ## Further: Create an analog clock
 
@@ -64,6 +83,12 @@ var now = new Date();
 
 Get `now` by declaring a new Date object. Investigate
 what useful functions the Date object has attached to it.
+
+## Further: Time zones
+Create several clocks, each running in a different time zone.
+
+## Further: Interplanetary Time
+Create clocks that run on mars, venus or jupiter time. Show the date as well. 
 
 ## Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.
