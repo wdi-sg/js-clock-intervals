@@ -4,14 +4,22 @@
     <meta charset="utf-8">
     <title>Clock</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="clock.js"></script>
   </head>
   <body>
-    <div id="clock">
+    <div id="digital">
+      <span id="hour"></span>:
+      <span id="minute"></span>:
+      <span id="second"></span>
+      <span id="ampm"></span>
+    </div>
+    <button id="smash">Stop</button>
+    <button id="start">Start</button>
+    <!-- <div id="clock">
       <img id="face" src="img/clockface.png"/>
       <img id="second" src="img/second-hand.png"/>
       <img id="minute" src="img/minute-hand.png"/>
       <img id="hour" src="img/hour-hand.png"/>
-    </div>
+    </div> -->
+    <script src="clock.js"></script>
   </body>
 </html>
