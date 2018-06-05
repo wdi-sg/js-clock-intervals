@@ -9,6 +9,12 @@ Your display should have an hour, minute and seconds display:
 ```
 12:23:23
 ```
+
+### Note:
+For the first iteration, your clock *does not have to display the real time*.
+It can start at `0:00:00` and increment up from there. At midnight (`23:59:59`) it can reset to zero.
+How do yout test it besides waiting 24 hours? Perhaps the time can be stored in a global variable you can change from the dev console.
+
 ## Further
 Create a clock that displays a more accurate time:
 ```
