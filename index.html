@@ -5,13 +5,21 @@
     <title>Clock</title>
     <link rel="stylesheet" href="style.css" />
     <script src="clock.js"></script>
+    <style>
+    #digitalClock {
+      position: relative;
+      top: 600px;
+      left: 180px;
+      font-size: 30px;
+    }
+
+  </style>
   </head>
-  <body>
-    <div id="clock">
-      <img id="face" src="img/clockface.png"/>
-      <img id="second" src="img/second-hand.png"/>
-      <img id="minute" src="img/minute-hand.png"/>
-      <img id="hour" src="img/hour-hand.png"/>
-    </div>
+  <body onload="startTime()">
+    <section id="digitalClock">
+    </section>
+    <canvas id="clock" width="500" height="500">
+      Please upgrade your browser.
+    </canvas>
   </body>
 </html>
