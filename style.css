@@ -1,14 +1,31 @@
+
+.container{
+	position:relative;
+}
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
 #clock {
+	margin: 0% 0% 3% 28%;
 }
 
 #clock img {
+	position: absolute;
 }
 
-#hour {
+#hours {
+	position: absolute;
+	animation: rotate 43200s infinite linear;
 }
 
-#minute {
+#minutes {
+	position: absolute;
+	animation: rotate 3600s infinite linear;
 }
 
-#second {
+#seconds {
+	position: absolute;
+	animation: rotate 60s infinite linear;
 }
