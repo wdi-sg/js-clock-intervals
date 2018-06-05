@@ -1,7 +1,17 @@
 # JavaScript Clock Intervals
 
-Create a webpage that displays a clock where the
-second, minute, and hour hands tick.
+Create a webpage that displays a clock.
+
+Your display should have an hour, minute and seconds display:
+
+```
+12:23:23
+```
+
+## Further
+Create a clock that displays AM and PM.
+
+## Further: Create an analog clock
 
 Write CSS to have the clock face, second, minute, hour
 hands all display correctly on top of each other. Make
@@ -44,7 +54,7 @@ hourRotation(12); // returns 0
 hourRotation(5); // returns (5 / 12) * 360
 ```
 
-## Bonus: Show Actual Time
+## Further: Show Actual Time
 Use JavaScripts `Date` objects to display the actual
 time.
 
