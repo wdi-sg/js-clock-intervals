@@ -2,6 +2,12 @@
 }
 
 #clock img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 250px auto;
 }
 
 #hour {
@@ -11,4 +17,14 @@
 }
 
 #second {
+}
+
+.time-zone {
+  font-size: 34px;
+  margin: 5px;
+}
+
+.clock-time {
+  font-size: 34px;
+  margin: 5px;
 }
