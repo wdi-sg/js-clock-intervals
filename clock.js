@@ -1,43 +1,56 @@
 var secondSelector = document.querySelector('#second');
 var minuteSelector = document.querySelector('#minute');
 var hourSelector = document.querySelector('#hour');
-var second = 59;
-var minute = 59;
-var hour = 23;
+var msSelector = document.querySelector('#ms')
 
-var clockBegin;
+//get date
+
+var date = new Date();
+
+var ms = date.getMilliseconds();
+var second = date.getSeconds();
+var minute = date.getMinutes();
+var hour = date.getHours();
+
+var clockBegin = setInterval("startClock()",1);
 //set all to zero and start counting
 //once second hits 60, minute should +1, once minute hit 60 +1 hour, once hour hits 24 or clock display 24:00:00, reset all to zero
 function startClock(){
-  clockBegin = setInterval(function(){
   //where to output
+  //was slow
       secondSelector.innerText = checkTime(second);
       minuteSelector.innerText = checkTime(minute);
       hourSelector.innerText = checkTime(hour);
+      msSelector.innerText = ms;
   //starts the clock
-      second++;
+      ms++;
+  if (ms >= 1000) {
+    ms = 0;
+    second++;
+  }
   //basic clock function
-      if (second == 60) {
-        second = 0;
-        minute++;
-      }
-
-      if (minute == 60){
-        minute = 0;
-        hour++
-      }
-
-      if (hour == 24){
-        second = 0;
-        minute = 0;
-        hour = 0;
-      }
-  },1000)
+  if (second == 60) {
+    second = 0;
+    minute++;
+  }
+  if (minute == 60){
+    minute = 0;
+    hour++;
+  }
+  if (hour == 24){
+    second = 0;
+    minute = 0;
+    hour = 0;
+  }
 }
-startClock();
+var clockBegin = function(){
+  setInterval("startClock()",1);
+}
+// document.addEventListener("DOMContentLoaded", clockBegin);
 
-var btn = document.querySelector('#smash').addEventListener("click", stopClock);
-var btn2 = document.querySelector('#start').addEventListener("click", startClock);
+// var btn = document.querySelector('#smash').addEventListener("click", stopClock);
+// var btn2 = document.querySelector('#start').addEventListener("click", startClock);
+//weird it stopped working
 
 function stopClock(){
   clearInterval(clockBegin);
