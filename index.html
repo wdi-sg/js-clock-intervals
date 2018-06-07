@@ -3,15 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>Clock</title>
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <script src="clock.js"></script>
   </head>
   <body>
     <div id="clock">
       <img id="face" src="img/clockface.png"/>
-      <img id="second" src="img/second-hand.png"/>
-      <img id="minute" src="img/minute-hand.png"/>
-      <img id="hour" src="img/hour-hand.png"/>
+      <div>
+        <img id="hour" src="img/hour-hand.png"/>
+        <div>
+          <img id="minute" src="img/minute-hand.png"/>
+          <div>
+            <img id="second" src="img/second-hand.png"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="clock2">
+      <h1 id="utc8">UTC+8</h1>
+      <img id="face2" src="img/clockface.png"/>
+      <div>
+        <img id="hour2" src="img/hour-hand.png"/>
+        <div>
+          <img id="minute2" src="img/minute-hand.png"/>
+          <div>
+            <img id="second2" src="img/second-hand.png"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="digital">
+      <h1 class="red"></h1>
+      <h1 class="green"></h1>
+      <h1 class="blue"></h1>
     </div>
   </body>
 </html>
