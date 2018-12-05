@@ -2,6 +2,8 @@
 
 Create a webpage that displays a clock.
 
+![https://media.giphy.com/media/l0MYOUI5XfRk4LLWM/giphy.gif](https://media.giphy.com/media/l0MYOUI5XfRk4LLWM/giphy.gif)
+
 You can write some HTML, or you can start with a blank page.
 
 Your display should have an hour, minute and seconds display:
